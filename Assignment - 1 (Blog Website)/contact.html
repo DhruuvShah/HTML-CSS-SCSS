@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparknotes | Contact</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=12">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="Logo.png" alt="Sparknotes logo" class="logo-mark">
+                <span class="logo-text">Sparknotes</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <p class="eyebrow">Contact</p>
+            <h1>Let's talk anime, food, or your <span class="highlight">4 AM</span> routine</h1>
+            <p class="hero-subtitle">Whether you want to recommend a show, argue about pizza toppings, or just say
+                hello &mdash; I'd genuinely love to hear from you.</p>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <div class="contact-layout">
+
+            <div class="contact-info">
+                <h2>Find me here</h2>
+                <p>Drop a message through the form, or reach out directly &mdash; I read everything that lands in my
+                    inbox, even the pizza-topping debates.</p>
+                <ul class="contact-list">
+                    <li>
+                        <span>Email</span>
+                        hello@sparknotes.blog
+                    </li>
+                    <li>
+                        <span>Based in</span>
+                        India
+                    </li>
+                    <li>
+                        <span>Usually replies within</span>
+                        2&ndash;3 days
+                    </li>
+                </ul>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="What should I call you?" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me what's on your mind..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send message</button>
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2025 Sparknotes &middot; Crafted with curiosity by Dhruv.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
