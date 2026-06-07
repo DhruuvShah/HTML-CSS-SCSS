@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARKIV — Product Showcase</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="wrap topbar__inner">
+            <a class="brand" href="#top">
+                <img class="brand__mark" src="favicon.png" alt="" width="38" height="38">
+                <span>
+                    <span class="brand__name">ARKIV</span>
+                    <span class="brand__tag">Catalog — Vol. 04</span>
+                </span>
+            </a>
+
+            <nav class="nav" id="site-nav">
+                <a class="nav__link is-active" href="#catalog">Catalog</a>
+                <a class="nav__link" href="#spotlight">Spotlight</a>
+                <a class="nav__link" href="#updates">Updates</a>
+            </nav>
+
+            <a class="btn btn--ghost topbar__cta" href="mailto:hello@arkiv.studio">Get in touch</a>
+
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"
+                aria-controls="site-nav">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <!-- ================= HERO ================= -->
+        <section class="hero">
+            <div class="wrap hero__grid">
+                <div class="hero__copy">
+                    <span class="eyebrow">Catalog — Vol. 04 / Spring selects</span>
+                    <h1>A considered edit of <em>things worth keeping</em>.</h1>
+                    <p class="hero__lede">
+                        Eight pieces pulled from a much longer list — chosen for build quality, honest pricing,
+                        and the kind of design that still looks right in five years. No filler, no flash sales,
+                        just the index as it stands today.
+                    </p>
+                    <div class="hero__actions">
+                        <a class="btn btn--solid" href="#catalog">
+                            Browse the catalog
+                            <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+                        </a>
+                        <a class="btn btn--ghost" href="#spotlight">How we choose</a>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <strong>08</strong>
+                            <span>Pieces listed</span>
+                        </div>
+                        <div class="hero__stat">
+                            <strong>06</strong>
+                            <span>Categories</span>
+                        </div>
+                        <div class="hero__stat">
+                            <strong>48 hrs</strong>
+                            <span>Average dispatch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="hero__frame">
+                        <span class="hero__frame-tag">Featured — No. 01</span>
+                        <img src="1.avif" alt="Trail Runner Low sneaker, the catalog's featured item">
+                        <span class="annotation annotation--a">
+                            <span class="annotation__line" aria-hidden="true"></span>
+                            <span class="annotation__label">Hand-finished stitching</span>
+                        </span>
+                        <span class="annotation annotation--b">
+                            <span class="annotation__line" aria-hidden="true"></span>
+                            <span class="annotation__label">Recycled sole compound</span>
+                        </span>
+                        <span class="annotation annotation--c">
+                            <span class="annotation__dot" aria-hidden="true"></span>
+                            <span class="annotation__line" aria-hidden="true"></span>
+                            <span class="annotation__label">Ships in 48 hours</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CATALOG ================= -->
+        <section class="section" id="catalog">
+            <div class="wrap">
+                <div class="section__head">
+                    <div>
+                        <span class="eyebrow">The catalog</span>
+                        <h2 class="section__title">Eight pieces, considered carefully.</h2>
+                    </div>
+                    <p class="section__note">
+                        Filter by category to narrow the list. Every entry ships with the details that
+                        actually matter — materials, fit notes, and what to expect on day one.
+                    </p>
+                </div>
+
+                <div class="filter-bar" id="filter-bar" role="group" aria-label="Filter the catalog by category">
+                    <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+                    <button class="filter-chip" type="button" data-filter="footwear">Footwear</button>
+                    <button class="filter-chip" type="button" data-filter="eyewear">Eyewear</button>
+                    <button class="filter-chip" type="button" data-filter="tech">Tech</button>
+                    <button class="filter-chip" type="button" data-filter="fragrance">Fragrance</button>
+                    <button class="filter-chip" type="button" data-filter="grooming">Grooming</button>
+                    <button class="filter-chip" type="button" data-filter="accessories">Accessories</button>
+                </div>
+
+                <div class="showcase" id="showcase">
+
+                    <article class="product-card" data-category="footwear">
+                        <div class="product-card__media">
+                            <span class="product-card__index">No. 01</span>
+                            <span class="product-card__tag">Footwear</span>
+                            <img src="1.avif" alt="Trail Runner Low sneaker in stone grey">
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">Trail Runner Low</h3>
+                            <p class="product-card__desc">A do-everything trainer with a recycled-foam midsole and a sole unit built to take a beating.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$99.99</span>
+                                <button class="product-card__action" type="button">
+                                    Add to list
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="eyewear">
+                        <div class="product-card__media">
+                            <span class="product-card__index">No. 02</span>
+                            <span class="product-card__tag">Eyewear</span>
+                            <img src="2.avif" alt="Halo sunglasses with rounded acetate frames">
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">Halo Sunglasses</h3>
+                            <p class="product-card__desc">Hand-polished acetate frames with polarised lenses — light enough to forget you're wearing them.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$24.99</span>
+                                <button class="product-card__action" type="button">
+                                    Add to list
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="tech">
+                        <div class="product-card__media">
+                            <span class="product-card__index">No. 03</span>
+                            <span class="product-card__tag">Tech</span>
+                            <img src="3.avif" alt="Pulse smartwatch with a round dial and woven strap">
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">Pulse Smartwatch</h3>
+                            <p class="product-card__desc">A round-faced companion with a week-long battery, sleep tracking, and a strap that actually breathes.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$129.50</span>
+                                <button class="product-card__action" type="button">
+                                    Add to list
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="fragrance">
+                        <div class="product-card__media">
+                            <span class="product-card__index">No. 04</span>
+                            <span class="product-card__tag">Fragrance</span>
+                            <img src="4.avif" alt="Bottle of No. 5 eau de parfum">
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">No. 5 Eau de Parfum</h3>
+                            <p class="product-card__desc">Bergamot up top, cedar underneath, and a finish that lingers politely rather than announcing itself.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$135.00</span>
+                                <button class="product-card__action" type="button">
+                                    Add to list
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="tech">
+                        <div class="product-card__media">
+                            <span class="product-card__index">No. 05</span>
+                            <span class="product-card__tag">Tech</span>
+                            <img src="5.avif" alt="Compact mirrorless camera with a prime lens attached">
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">Compact Mirrorless Camera</h3>
+                            <p class="product-card__desc">A pocketable body with a full-frame sensor and the kind of colour science you don't have to fight in editing.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$749.00</span>
+                                <button class="product-card__action" type="button">
+                                    Add to list
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="accessories">
+                        <div class="product-card__media">
+                            <span class="product-card__index">No. 06</span>
+                            <span class="product-card__tag">Accessories</span>
+                            <img src="6.avif" alt="Die-cast model roadster in racing green">
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">Die-Cast Roadster</h3>
+                            <p class="product-card__desc">A 1:24 scale replica with opening doors and a hand-painted finish — built for the shelf, not the toybox.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$45.00</span>
+                                <button class="product-card__action" type="button">
+                                    Add to list
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="grooming">
+                        <div class="product-card__media">
+                            <span class="product-card__index">No. 07</span>
+                            <span class="product-card__tag">Grooming</span>
+                            <img src="7.avif" alt="Bottle of daily clarifying face cleanser">
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">Daily Clarifying Cleanser</h3>
+                            <p class="product-card__desc">A fragrance-free, pH-balanced gel that does the basics properly and leaves the rest of your shelf alone.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$18.00</span>
+                                <button class="product-card__action" type="button">
+                                    Add to list
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="accessories">
+                        <div class="product-card__media">
+                            <span class="product-card__index">No. 08</span>
+                            <span class="product-card__tag">Accessories</span>
+                            <img src="8.avif" alt="Heritage chronograph watch with a steel bracelet">
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">Heritage Chronograph</h3>
+                            <p class="product-card__desc">A sapphire-crystal chronograph with a brushed-steel bracelet — the one piece on this list built to outlast you.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$420.00</span>
+                                <button class="product-card__action" type="button">
+                                    Add to list
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="section__note" id="empty-state" hidden style="margin-top:28px;">
+                    Nothing in this category just yet — check back after the next drop, or browse the full list above.
+                </p>
+            </div>
+        </section>
+
+        <!-- ================= SPOTLIGHT ================= -->
+        <section class="section section--sunken" id="spotlight">
+            <div class="wrap">
+                <div class="section__head">
+                    <div>
+                        <span class="eyebrow">Spotlight — No. 05</span>
+                        <h2 class="section__title">Why the Compact Mirrorless Camera made the cut.</h2>
+                    </div>
+                    <p class="section__note">
+                        Each season we pull one piece aside for a closer look — the why behind the listing,
+                        not just the spec sheet.
+                    </p>
+                </div>
+
+                <div class="spotlight__grid">
+                    <div class="spotlight__media">
+                        <img src="5.avif" alt="Close-up of the Compact Mirrorless Camera body and lens dial">
+                    </div>
+                    <div class="spotlight__panel">
+                        <span class="eyebrow">The pick</span>
+                        <h3>It fits in a coat pocket and still shoots like a studio body.</h3>
+                        <p class="spotlight__lede">
+                            Most "compact" cameras ask you to trade something away — sensor size, lens choice,
+                            battery life. This one doesn't. It's the rare piece that earned a spot on the list
+                            without an asterisk attached.
+                        </p>
+                        <dl class="spec-list">
+                            <div class="spec-item">
+                                <dt>Sensor</dt>
+                                <dd>Full-frame, 33 MP</dd>
+                            </div>
+                            <div class="spec-item">
+                                <dt>Weight</dt>
+                                <dd>438 g, body only</dd>
+                            </div>
+                            <div class="spec-item">
+                                <dt>Battery life</dt>
+                                <dd>Approx. 420 shots</dd>
+                            </div>
+                            <div class="spec-item">
+                                <dt>Mount</dt>
+                                <dd>Native E-mount, adapter-friendly</dd>
+                            </div>
+                            <div class="spec-item">
+                                <dt>Ships with</dt>
+                                <dd>Body cap, strap, USB-C cable</dd>
+                            </div>
+                        </dl>
+                        <div class="hero__actions" style="margin-bottom:0;">
+                            <a class="btn btn--solid" href="#catalog">
+                                Add to shortlist
+                                <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+                            </a>
+                            <a class="btn btn--ghost" href="mailto:hello@arkiv.studio">Ask a question</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CTA / UPDATES ================= -->
+        <section class="cta-band" id="updates">
+            <div class="wrap cta-band__inner">
+                <div class="cta-band__copy">
+                    <span class="eyebrow">Stay in the loop</span>
+                    <h2>Get the next drop before it's listed.</h2>
+                </div>
+                <form class="cta-form" action="#" method="post">
+                    <label class="visually-hidden" for="email">Email address</label>
+                    <input class="cta-input" type="email" id="email" name="email" placeholder="you@email.com" required>
+                    <button class="btn btn--solid" type="submit">Notify me</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a class="brand" href="#top">
+                        <img class="brand__mark" src="favicon.png" alt="" width="38" height="38">
+                        <span>
+                            <span class="brand__name">ARKIV</span>
+                            <span class="brand__tag">Catalog — Vol. 04</span>
+                        </span>
+                    </a>
+                    <p>
+                        A small, slow-moving catalog of things we'd actually buy again — refreshed each
+                        season, never padded out for the sake of it.
+                    </p>
+                </div>
+                <div class="footer__cols">
+                    <div class="footer__col">
+                        <h4>Shop</h4>
+                        <ul>
+                            <li><a href="#catalog">Full catalog</a></li>
+                            <li><a href="#spotlight">Spotlight</a></li>
+                            <li><a href="#updates">Get updates</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="mailto:hello@arkiv.studio">Shipping &amp; returns</a></li>
+                            <li><a href="mailto:hello@arkiv.studio">Size guide</a></li>
+                            <li><a href="mailto:hello@arkiv.studio">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="mailto:hello@arkiv.studio">hello@arkiv.studio</a></li>
+                            <li><a href="#top">Instagram</a></li>
+                            <li><a href="#top">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 ARKIV. Built for the assignment, not the shelf.</span>
+                <a href="#top">Back to top &uarr;</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
