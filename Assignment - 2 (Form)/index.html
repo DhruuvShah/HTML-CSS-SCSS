@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get in Touch &mdash; Studio Ledger</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="page">
+    <section class="sheet" aria-labelledby="form-title">
+
+      <header class="sheet__header">
+        <p class="eyebrow"><span class="eyebrow__mark">&mdash;</span> Correspondence&nbsp;No.&nbsp;014</p>
+        <h1 id="form-title">Let's start a conversation</h1>
+        <p class="lede">
+          Tell me a little about what's on your mind &mdash; a question, an idea, or just a hello.
+          I read every message myself and reply within two working days.
+        </p>
+      </header>
+
+      <form class="sheet__form" action="#" method="post" novalidate>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Jordan Avery" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone <span class="field__hint">optional</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="jordan@yourstudio.com" autocomplete="email"
+            required>
+        </div>
+
+        <div class="field">
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Start writing here&hellip;" required></textarea>
+        </div>
+
+        <div class="sheet__footer">
+          <p class="form-note">
+            By sending this, you're okay with being contacted back using the details you've shared above.
+          </p>
+
+          <button type="submit" class="btn-send">
+            <span>Send message</span>
+            <svg class="btn-send__icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
