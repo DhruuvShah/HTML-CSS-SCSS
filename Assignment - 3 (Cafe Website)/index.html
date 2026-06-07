@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiln &mdash; Small-Batch Coffee Roastery</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="wrap topbar__inner">
+            <a class="brand" href="index.html">
+                <img class="brand__mark" src="favicon.png" alt="" width="22" height="22">
+                Kiln
+            </a>
+            <nav class="nav" id="site-nav" aria-label="Primary">
+                <a href="index.html" class="nav__link is-active">Home</a>
+                <a href="about.html" class="nav__link">About</a>
+                <a href="products.html" class="nav__link">Products</a>
+                <a href="contact.html" class="nav__link">Contact</a>
+            </nav>
+            <a class="btn btn--ghost topbar__cta" href="contact.html">Visit us</a>
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"
+                aria-controls="site-nav">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+            <span>Single origin</span>
+            <span>Small batch</span>
+            <span>Roasted in-house</span>
+            <span>Zero-waste packaging</span>
+            <span>Oat, soy &amp; almond milk</span>
+            <span>Single origin</span>
+            <span>Small batch</span>
+            <span>Roasted in-house</span>
+            <span>Zero-waste packaging</span>
+            <span>Oat, soy &amp; almond milk</span>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="hero">
+            <div class="wrap hero__grid">
+                <div class="hero__copy">
+                    <p class="eyebrow">Est. 2019 &mdash; Lamington Road, Mumbai</p>
+                    <h1>Coffee, roasted slow and <em>poured&nbsp;with&nbsp;intention.</em></h1>
+                    <p>
+                        From green bean to cup, every step happens within two miles of where you're sitting.
+                        We roast in small batches twice a week, rest each one for ten days, and cup it blind
+                        before it ever reaches the counter &mdash; if we wouldn't drink it, you won't either.
+                    </p>
+                    <div class="hero__actions">
+                        <a class="btn btn--solid" href="products.html">
+                            <span>See the menu</span>
+                            <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a class="btn btn--ghost" href="about.html">Our story</a>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <svg class="seal" width="190" height="190" viewBox="0 0 200 200" aria-hidden="true">
+                        <defs>
+                            <path id="sealPath" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" />
+                        </defs>
+                        <text font-family="JetBrains Mono, monospace" font-size="11.5" letter-spacing="3"
+                            fill="currentColor">
+                            <textPath href="#sealPath">
+                                EST. 2019 &#8226; SMALL-BATCH ROASTERY &#8226; SINGLE ORIGIN &#8226; CUPPED BLIND
+                                &#8226;
+                            </textPath>
+                        </text>
+                        <circle cx="100" cy="100" r="36" stroke="currentColor" stroke-width="1.4" fill="none" />
+                        <ellipse cx="100" cy="100" rx="15" ry="10.5" transform="rotate(-40 100 100)"
+                            stroke="currentColor" stroke-width="1.4" fill="none" />
+                        <path d="M91 105c3-6 3-9 8-8.5" stroke="currentColor" stroke-width="1.4" fill="none"
+                            stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap">
+                <div class="section__head">
+                    <p class="eyebrow">How we work</p>
+                    <h2>Three habits we've never broken</h2>
+                    <p>Good coffee isn't a single decision &mdash; it's a hundred small, repeatable ones. Here are the
+                        three
+                        that matter most to us.</p>
+                </div>
+                <ul class="feature-list">
+                    <li>
+                        <span class="num">01 / Source</span>
+                        <h3>Direct trade, every season</h3>
+                        <p>We buy straight from three family farms in Ethiopia, Colombia and Sumatra, and pay well above
+                            fair-trade rates &mdash; no brokers in between.</p>
+                    </li>
+                    <li>
+                        <span class="num">02 / Roast</span>
+                        <h3>Drum-roasted in-house</h3>
+                        <p>Every batch goes through our 1958 Probat drum roaster, then rests for ten days before it's
+                            ground
+                            &mdash; long enough for the flavour to settle.</p>
+                    </li>
+                    <li>
+                        <span class="num">03 / Pour</span>
+                        <h3>Cupped before it's served</h3>
+                        <p>Our baristas blind-taste every new batch before it goes on the menu. If the table doesn't
+                            agree on
+                            it, it doesn't make the cut.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section section--light">
+            <div class="wrap">
+                <div class="section__head">
+                    <p class="eyebrow">Behind the counter</p>
+                    <h2>A look inside the roastery</h2>
+                    <p>From the cupping table to the drum roaster &mdash; a few frames from an ordinary Tuesday morning.
+                    </p>
+                </div>
+                <div class="gallery">
+                    <div class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?w=900&auto=format&fit=crop&q=60"
+                            alt="Barista pouring a cup of filter coffee at the counter">
+                        <span class="gallery__caption">The morning pour</span>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1517256742927-ccff23d76be8?w=700&auto=format&fit=crop&q=60"
+                            alt="Close-up of roasted coffee beans">
+                        <span class="gallery__caption">Batch no. 214</span>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=700&auto=format&fit=crop&q=60"
+                            alt="Latte art on a flat white">
+                        <span class="gallery__caption">Latte, no. 5</span>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&auto=format&fit=crop&q=60"
+                            alt="Coffee beans being weighed before grinding">
+                        <span class="gallery__caption">Weigh-in</span>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=900&auto=format&fit=crop&q=60"
+                            alt="Interior of the cafe with wooden counters">
+                        <span class="gallery__caption">The counter, 8&nbsp;a.m.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-band">
+            <div class="wrap cta-band__inner">
+                <h2>Hungry for more than a cup? Take a look at what's on the counter today.</h2>
+                <a class="btn btn--solid" href="products.html">
+                    <span>View the full menu</span>
+                    <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a class="brand" href="index.html">
+                        <img class="brand__mark" src="favicon.png" alt="" width="22" height="22">
+                        Kiln
+                    </a>
+                    <p>A small-batch roastery and counter on Lamington Road, Mumbai. Roasted weekly, served with
+                        intention.</p>
+                </div>
+                <div class="footer__cols">
+                    <div class="footer__col">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="about.html">Our story</a></li>
+                            <li><a href="products.html">Menu</a></li>
+                            <li><a href="contact.html">Visit us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Find us</h4>
+                        <ul>
+                            <li><a href="contact.html">14 Lamington Road, Mumbai</a></li>
+                            <li><a href="mailto:hello@kilncoffee.in">hello@kilncoffee.in</a></li>
+                            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Kiln Coffee Roasters</span>
+                <span>Roasted &amp; poured in Mumbai</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
