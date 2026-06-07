@@ -27,7 +27,7 @@
         </p>
       </header>
 
-      <form class="sheet__form" action="#" method="post" novalidate>
+      <form class="sheet__form" id="contact-form" action="#" method="post" novalidate>
 
         <div class="field-row">
           <div class="field">
@@ -67,8 +67,24 @@
         </div>
 
       </form>
+
+      <div class="confirm" id="confirm-panel" role="status" tabindex="-1" hidden>
+        <span class="confirm__stamp" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </span>
+        <h2>Message sent</h2>
+        <p>Thank you for writing in &mdash; your note has been received, and I'll get back to you within two working
+          days.</p>
+        <button type="button" class="btn-reset" id="reset-form">Send another message</button>
+      </div>
+
     </section>
   </main>
+
+  <script src="script.js" defer></script>
 </body>
 
 </html>

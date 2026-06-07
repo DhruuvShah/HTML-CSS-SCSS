@@ -27,6 +27,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html,
 body {
   height: 100%;
@@ -291,6 +295,96 @@ body {
 @media (min-width: 1024px) and (min-height: 760px) {
   .sheet {
     padding: 64px 72px;
+  }
+}
+
+/* ---------- Confirmation state ---------- */
+
+.confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  padding: clamp(16px, 5vh, 40px) 0;
+  outline: none;
+  animation: confirm-in 420ms var(--ease);
+}
+
+.confirm__stamp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 1.5px solid var(--color-clay);
+  border-radius: 50%;
+  color: var(--color-clay);
+}
+
+.confirm h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(24px, 4vw, 32px);
+  letter-spacing: -0.01em;
+}
+
+.confirm p {
+  margin: 0;
+  max-width: 38ch;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--color-ink-soft);
+}
+
+.btn-reset {
+  position: relative;
+  margin-top: 6px;
+  padding: 0 0 4px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 13.5px;
+  letter-spacing: 0.05em;
+  color: var(--color-ink);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-reset::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.5px;
+  background: var(--color-clay);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 280ms var(--ease);
+}
+
+.btn-reset:hover::after,
+.btn-reset:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.btn-reset:focus-visible {
+  outline: 2px solid var(--color-clay);
+  outline-offset: 4px;
+}
+
+@keyframes confirm-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
