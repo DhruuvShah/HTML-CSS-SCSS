@@ -5,4 +5,48 @@
 html,body{
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
+}
+
+/* Hide scrollbars visually while keeping scroll functionality */
+html, body{
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* ---- GSAP motion system ---- */
+
+.page-transition{
+    position: fixed;
+    inset: 0;
+    background: #000;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    z-index: 10000;
+    pointer-events: none;
+}
+
+.marquee{
+    overflow: hidden;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.marquee-track{
+    display: flex;
+    width: max-content;
+    will-change: transform;
+}
+
+.marquee-track span{
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
